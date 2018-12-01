@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://www.huweihuang.com/article/source-analysis/kubelet/create-pod-by-kubelet/</loc>
+        <lastmod>2018-12-01T12:54:27.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.huweihuang.com/article/essay/sky-and-well/</loc>
         <lastmod>2018-11-15T13:19:36.042Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -519,7 +527,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/kubernetes/monitoring/influxdb-introduction/</loc>
+        <loc>http://www.huweihuang.com/article/kubernetes/monitoring/heapster-introduction/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -527,7 +535,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/kubernetes/monitoring/heapster-introduction/</loc>
+        <loc>http://www.huweihuang.com/article/kubernetes/monitoring/influxdb-introduction/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

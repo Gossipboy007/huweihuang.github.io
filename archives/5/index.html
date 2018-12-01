@@ -209,6 +209,58 @@
 
 <div class="post-preview">
 
+    <a href="/article/python/basics/python-function/">
+        <h2 class="post-title">
+            [Python] Python系列（二）之Python函数
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. 内置函数
+python的内置参数详见以下链接，也可以通过help(function_name)来查看具体函数的使用帮助。
+http://docs.python.org/3/library/functions.html#abs
+
+
+
+
+Built-in Functions
+
+
+
+
+
+
+
+abs()
+dict()
+help()
+min()
+setattr()
+
+
+all()
+dir()
+h......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-09-10
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Python" title="Python">Python</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/python/basics/python-basics/">
         <h2 class="post-title">
             [Python] Python系列（一）之基础篇
@@ -304,16 +356,24 @@ golang工程的依赖包经常使用go get 的方式来获取，例如：go get 
 
 <div class="post-preview">
 
-    <a href="/article/golang/web-programming/golang-http-execution-flow/">
+    <a href="/article/golang/golang-gdb-debug/">
         <h2 class="post-title">
-            [Golang] GO HTTP执行流程
+            [Golang] Golang之GDB调试
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            1. http包建立web服务器
-1234567891011121314151617181920212223242526package mainimport (    "fmt"    "log"    "net/http"    "strings")func sayhelloName(w http.ResponseWriter, r *http.Request) &#123;    r.P......
+            1. GDB简介
+GDB是FSF(自由软件基金会)发布的一个强大的类UNIX系统下的程序调试工具。使用GDB可以做如下事情：
+
+启动程序，可以按照开发者的自定义要求运行程序。
+可让被调试的程序在开发者设定的调置的断点处停住。（断点可以是条件表达式）
+当程序被停住时，可以检查此时程序中所发生的事。
+动态的改变当前程序的执行环境。
+
+目前支持调试Go程序的GDB版本必须大于7.1。
+编译Go程序......
         </div>
     </a>
     
@@ -401,24 +461,16 @@ JSON是一种轻量级的数据交换语言。
 
 <div class="post-preview">
 
-    <a href="/article/golang/golang-gdb-debug/">
+    <a href="/article/golang/web-programming/golang-http-execution-flow/">
         <h2 class="post-title">
-            [Golang] Golang之GDB调试
+            [Golang] GO HTTP执行流程
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            1. GDB简介
-GDB是FSF(自由软件基金会)发布的一个强大的类UNIX系统下的程序调试工具。使用GDB可以做如下事情：
-
-启动程序，可以按照开发者的自定义要求运行程序。
-可让被调试的程序在开发者设定的调置的断点处停住。（断点可以是条件表达式）
-当程序被停住时，可以检查此时程序中所发生的事。
-动态的改变当前程序的执行环境。
-
-目前支持调试Go程序的GDB版本必须大于7.1。
-编译Go程序......
+            1. http包建立web服务器
+1234567891011121314151617181920212223242526package mainimport (    "fmt"    "log"    "net/http"    "strings")func sayhelloName(w http.ResponseWriter, r *http.Request) &#123;    r.P......
         </div>
     </a>
     
@@ -477,37 +529,6 @@ GDB是FSF(自由软件基金会)发布的一个强大的类UNIX系统下的程�
         <div class="post-content-preview">
             1. Controller Manager简介
 Controller Manager作为集群内部的管理控制中心，负责集群内的Node、Pod副本、服务端点（Endpoint）、命名空间（Namespace）、服务账号（ServiceAccount）、资源定额（ResourceQuota）的管理，当某个Node意外宕机时，Controller Manager会及时发现并执行自动化修复流程，确保......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-08-15
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/kubernetes/core-principle/kubernetes-core-principle-scheduler/">
-        <h2 class="post-title">
-            [Kubernetes] Kubernetes核心原理（三）之Scheduler
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. Scheduler简介
-Scheduler负责Pod调度。在整个系统中起&quot;承上启下&quot;作用，承上：负责接收Controller Manager创建的新的Pod，为其选择一个合适的Node；启下：Node上的kubelet接管Pod的生命周期。
-Scheduler：
-1）通过调度算法为待调度Pod列表的每个Pod从Node列表中选择一个最适合的Node，并将信息写入et......
         </div>
     </a>
     
@@ -586,15 +607,15 @@ Scheduler：
             
         
             
+            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
+            
+        
+            
             <a href="/tags/#Blockchain" title="Blockchain" rel="5">Blockchain</a>
             
         
             
             <a href="/tags/#Ethereum" title="Ethereum" rel="2">Ethereum</a>
-            
-        
-            
-            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
             
         
             
@@ -614,7 +635,7 @@ Scheduler：
             
         
             
-            <a href="/tags/#源码分析" title="源码分析" rel="5">源码分析</a>
+            <a href="/tags/#源码分析" title="源码分析" rel="6">源码分析</a>
             
         
             
@@ -708,15 +729,15 @@ Scheduler：
         </li>
       
         <li>
+          <a href="/article/source-analysis/kubelet/create-pod-by-kubelet/">[源码分析] kubelet源码分析（三）之 Pod的创建</a>
+        </li>
+      
+        <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
         </li>
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
-        </li>
-      
-        <li>
-          <a href="/article/ethereum/ethereum-introduction/">[Ethereum] 以太坊系列（一）之以太坊介绍</a>
         </li>
       
     </ul>
@@ -749,7 +770,7 @@ Scheduler：
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>

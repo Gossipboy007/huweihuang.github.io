@@ -271,6 +271,39 @@
 
 <div class="post-preview">
 
+    <a href="/article/source-analysis/kubelet/create-pod-by-kubelet/">
+        <h2 class="post-title">
+            [源码分析] kubelet源码分析（三）之 Pod的创建
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+以下代码分析基于 kubernetes v1.12.0 版本。
+本文主要分析https://github.com/kubernetes/kubernetes/tree/v1.12.0/pkg/kubelet 部分的代码。
+
+1. syncLoopIteration
+syncLoopIteration主要通过几种channel来对不同类型的事件进行监听并处理。其中包括：configCh、pl......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2018-10-04
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#源码分析" title="源码分析">源码分析</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/source-analysis/kubelet/kubelet-run/">
         <h2 class="post-title">
             [源码分析] kubelet源码分析（二）之 kubelet的运行
@@ -501,42 +534,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-
-    <a href="/article/source-analysis/nfs-client-provisioner/">
-        <h2 class="post-title">
-            [源码分析] nfs-client-provisioner源码分析
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            
-如果要开发一个Dynamic Provisioner，需要使用到the helper library。
-
-1. Dynamic Provisioner
-1.1. Provisioner Interface
-开发Dynamic Provisioner需要实现Provisioner接口，该接口有两个方法，分别是：
-
-Provision：创建存储资源，并且返回一个PV对象。
-Delete：移除对......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2018-06-24
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#源码分析" title="源码分析">源码分析</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
 
 
 <!-- Pager -->
@@ -594,15 +591,15 @@ Delete：移除对......
             
         
             
+            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
+            
+        
+            
             <a href="/tags/#Blockchain" title="Blockchain" rel="5">Blockchain</a>
             
         
             
             <a href="/tags/#Ethereum" title="Ethereum" rel="2">Ethereum</a>
-            
-        
-            
-            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
             
         
             
@@ -622,7 +619,7 @@ Delete：移除对......
             
         
             
-            <a href="/tags/#源码分析" title="源码分析" rel="5">源码分析</a>
+            <a href="/tags/#源码分析" title="源码分析" rel="6">源码分析</a>
             
         
             
@@ -716,15 +713,15 @@ Delete：移除对......
         </li>
       
         <li>
+          <a href="/article/source-analysis/kubelet/create-pod-by-kubelet/">[源码分析] kubelet源码分析（三）之 Pod的创建</a>
+        </li>
+      
+        <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
         </li>
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
-        </li>
-      
-        <li>
-          <a href="/article/ethereum/ethereum-introduction/">[Ethereum] 以太坊系列（一）之以太坊介绍</a>
         </li>
       
     </ul>
@@ -757,7 +754,7 @@ Delete：移除对......
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>

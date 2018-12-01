@@ -209,6 +209,39 @@
 
 <div class="post-preview">
 
+    <a href="/article/golang/glide-usage/">
+        <h2 class="post-title">
+            [Golang] glide的使用
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. glide简介
+glide是一个golang项目的包管理工具，非常方便快捷，一般只需要2-3个命令就可以将go依赖包自动下载并归档到vendor的目录中。
+2. glide安装
+1go get github.com/Masterminds/glide
+3. glide使用
+123456#进入到项目目录cd /home/gopath/src/demo#glide初始化，初始化配置文件gl......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2018-05-01
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Golang" title="Golang">Golang</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/arithmetic/data-structure-overview/">
         <h2 class="post-title">
             [Arithmetic] 数据结构概述
@@ -413,6 +446,39 @@ kubernetes的对象是一种意图（期望）的记录，kubernetes会始终保
 
 <div class="post-preview">
 
+    <a href="/article/kubernetes/kubernetes-troubleshooting/">
+        <h2 class="post-title">
+            [Kubernetes] Kubernetes集群问题排查
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. 查看系统Event事件
+ 1kubectl describe pod &lt;PodName&gt; --namespace=&lt;NAMESPACE&gt;
+该命令可以显示Pod创建时的配置定义、状态等信息和最近的Event事件，事件信息可用于排错。例如当Pod状态为Pending，可通过查看Event事件确认原因，一般原因有几种：
+
+没有可用的Node可调度
+开启了资源配额管理并......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-09-20
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/kubernetes/kubernetes-architecture/">
         <h2 class="post-title">
             [Kubernetes] Kubernetes总架构图
@@ -450,39 +516,6 @@ API Server根据请求的类型，比如创建Pod时storage类型是pods，.....
 
 <div class="post-preview">
 
-    <a href="/article/kubernetes/kubernetes-troubleshooting/">
-        <h2 class="post-title">
-            [Kubernetes] Kubernetes集群问题排查
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. 查看系统Event事件
- 1kubectl describe pod &lt;PodName&gt; --namespace=&lt;NAMESPACE&gt;
-该命令可以显示Pod创建时的配置定义、状态等信息和最近的Event事件，事件信息可用于排错。例如当Pod状态为Pending，可通过查看Event事件确认原因，一般原因有几种：
-
-没有可用的Node可调度
-开启了资源配额管理并......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-09-20
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
     <a href="/article/kubernetes/paas-based-on-docker-and-kubernetes/">
         <h2 class="post-title">
             [Kubernetes] 基于Docker及Kubernetes技术构建容器云（PaaS）平台
@@ -501,39 +534,6 @@ API Server根据请求的类型，比如创建Pod时storage类型是pods，.....
         <p class="post-meta" style="margin: 10px 0;">
             Posted by 胡伟煌 on
             2017-09-19
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/kubernetes/core-principle/kubernetes-core-principle-api-server/">
-        <h2 class="post-title">
-            [Kubernetes] Kubernetes核心原理（一）之API Server
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. API Server简介
-k8s API Server提供了k8s各类资源对象（pod,RC,Service等）的增删改查及watch等HTTP Rest接口，是整个系统的数据总线和数据中心。
-kubernetes API Server的功能：
-
-提供了集群管理的REST API接口(包括认证授权、数据校验以及集群状态变更)；
-提供其他模块之间的数据交互和通信的枢纽（其他模块通过API......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-09-18
         </p>
         <div class="tags">
             
@@ -606,15 +606,15 @@ kubernetes API Server的功能：
             
         
             
+            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
+            
+        
+            
             <a href="/tags/#Blockchain" title="Blockchain" rel="5">Blockchain</a>
             
         
             
             <a href="/tags/#Ethereum" title="Ethereum" rel="2">Ethereum</a>
-            
-        
-            
-            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
             
         
             
@@ -634,7 +634,7 @@ kubernetes API Server的功能：
             
         
             
-            <a href="/tags/#源码分析" title="源码分析" rel="5">源码分析</a>
+            <a href="/tags/#源码分析" title="源码分析" rel="6">源码分析</a>
             
         
             
@@ -728,15 +728,15 @@ kubernetes API Server的功能：
         </li>
       
         <li>
+          <a href="/article/source-analysis/kubelet/create-pod-by-kubelet/">[源码分析] kubelet源码分析（三）之 Pod的创建</a>
+        </li>
+      
+        <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
         </li>
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
-        </li>
-      
-        <li>
-          <a href="/article/ethereum/ethereum-introduction/">[Ethereum] 以太坊系列（一）之以太坊介绍</a>
         </li>
       
     </ul>
@@ -769,7 +769,7 @@ kubernetes API Server的功能：
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>

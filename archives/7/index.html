@@ -209,6 +209,37 @@
 
 <div class="post-preview">
 
+    <a href="/article/etcd/etcd-commands/">
+        <h2 class="post-title">
+            [Etcd] Etcd常用命令
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            一、etcdctl介绍
+etcdctl是一个命令行的客户端，它提供了一下简洁的命令，可理解为命令工具集，可以方便我们在对服务进行测试或者手动修改数据库内容。etcdctl与其他xxxctl的命令原理及操作类似（例如kubectl，systemctl）。
+用法：etcdctl [global options] command [command options][args…]
+二、Etcd常用命......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-07-10
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Etcd" title="Etcd">Etcd</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/etcd/etcd-introduction/">
         <h2 class="post-title">
             [Etcd] Etcd介绍
@@ -241,18 +272,19 @@ Secure: automatic TLS with optional client cert au......
 
 <div class="post-preview">
 
-    <a href="/article/etcd/etcd-commands/">
+    <a href="/article/etcd/etcd-auth&security/">
         <h2 class="post-title">
-            [Etcd] Etcd常用命令
+            [Etcd] Etcd访问控制
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            一、etcdctl介绍
-etcdctl是一个命令行的客户端，它提供了一下简洁的命令，可理解为命令工具集，可以方便我们在对服务进行测试或者手动修改数据库内容。etcdctl与其他xxxctl的命令原理及操作类似（例如kubectl，systemctl）。
-用法：etcdctl [global options] command [command options][args…]
-二、Etcd常用命......
+            1. ETCD资源类型
+There are three types of resources in etcd
+permission resources: users and roles in the user store
+key-value resources: key-value pairs in the key-value store
+settings resources: securi......
         </div>
     </a>
     
@@ -272,21 +304,50 @@ etcdctl是一个命令行的客户端，它提供了一下简洁的命令，可�
 
 <div class="post-preview">
 
-    <a href="/article/docker/docker-architecture/">
+    <a href="/article/docker/docker-commands-principle/">
         <h2 class="post-title">
-            [Docker] Docker整体架构图
+            [Docker] Docker常用命令原理图
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            一、Docker的总架构图
+            1. 基本概念
+1.1. image layer（镜像层）
+镜像可以看成是由多个镜像层叠加起来的一个文件系统，镜像层也可以简单理解为一个基本的镜像，而每个镜像层之间通过指针的形式进行叠加。
 
-docker是一个C/S模式的架构，后端是一个松耦合架构，模块各司其职。
+根据上图，镜像层的主要组成部分包括镜像层id，镜像层指针【指向父层】，元数据【layer metadata】包含了docker构建和运行的信息还有父层的层次信息。
+只读层和读写层【top layer】的......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-07-09
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Docker" title="Docker">Docker</a>
+            
+        </div>
+    
 
-用户是使用Docker Client与Docker Daemon建立通信，并发送请求给后者。
-Docker Daemon作为Docker架构中的主体部分，首先提供Server的功能使其可以接受Docker Client的请求；
-Engine执行Docker内部的一系列工作，每一项工作都是......
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/docker/code-analysis/code-analysis-of-docker-server/">
+        <h2 class="post-title">
+            [Docker] Docker源码分析（三）之Docker Server
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            一、Docker Server创建流程
+Docker Server是Daemon Server的重要组成部分，功能：接收Docker Client发送的请求，并按照相应的路由规则实现请求的路由分发，最终将请求处理的结果返回给Docker Client。
+Docker Daemon启动，在mainDaemon()运行的最后创建并运行serverapi的Job，让Docker Daemon提供A......
         </div>
     </a>
     
@@ -340,17 +401,53 @@ Docker......
 
 <div class="post-preview">
 
-    <a href="/article/docker/code-analysis/code-analysis-of-docker-server/">
+    <a href="/article/docker/docker-architecture/">
         <h2 class="post-title">
-            [Docker] Docker源码分析（三）之Docker Server
+            [Docker] Docker整体架构图
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            一、Docker Server创建流程
-Docker Server是Daemon Server的重要组成部分，功能：接收Docker Client发送的请求，并按照相应的路由规则实现请求的路由分发，最终将请求处理的结果返回给Docker Client。
-Docker Daemon启动，在mainDaemon()运行的最后创建并运行serverapi的Job，让Docker Daemon提供A......
+            一、Docker的总架构图
+
+docker是一个C/S模式的架构，后端是一个松耦合架构，模块各司其职。
+
+用户是使用Docker Client与Docker Daemon建立通信，并发送请求给后者。
+Docker Daemon作为Docker架构中的主体部分，首先提供Server的功能使其可以接受Docker Client的请求；
+Engine执行Docker内部的一系列工作，每一项工作都是......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-07-09
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Docker" title="Docker">Docker</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/docker/code-analysis/code-analysis-of-docker-daemon/">
+        <h2 class="post-title">
+            [Docker] Docker源码分析（二）之Docker Daemon
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            一、Docker Daemon架构示意图
+
+Docker Daemon是Docker架构中运行在后台的守护进程，大致可以分为Docker Server、Engine和Job三部分。
+Docker Daemon可以认为是通过Docker Server模块接受Docker Client的请求，并在Engine中处理请求，然后根据请求类型，创建出指定的Job并运行。
+运行过程的作用有以下几种可能：......
         </div>
     </a>
     
@@ -387,71 +484,6 @@ dockerfile指令分为构建指令和设置指令。
 
 二、Dockerfile指令说明
 1、FROM（......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-07-09
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Docker" title="Docker">Docker</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/docker/docker-commands-principle/">
-        <h2 class="post-title">
-            [Docker] Docker常用命令原理图
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. 基本概念
-1.1. image layer（镜像层）
-镜像可以看成是由多个镜像层叠加起来的一个文件系统，镜像层也可以简单理解为一个基本的镜像，而每个镜像层之间通过指针的形式进行叠加。
-
-根据上图，镜像层的主要组成部分包括镜像层id，镜像层指针【指向父层】，元数据【layer metadata】包含了docker构建和运行的信息还有父层的层次信息。
-只读层和读写层【top layer】的......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-07-09
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Docker" title="Docker">Docker</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/docker/code-analysis/code-analysis-of-docker-daemon/">
-        <h2 class="post-title">
-            [Docker] Docker源码分析（二）之Docker Daemon
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            一、Docker Daemon架构示意图
-
-Docker Daemon是Docker架构中运行在后台的守护进程，大致可以分为Docker Server、Engine和Job三部分。
-Docker Daemon可以认为是通过Docker Server模块接受Docker Client的请求，并在Engine中处理请求，然后根据请求类型，创建出指定的Job并运行。
-运行过程的作用有以下几种可能：......
         </div>
     </a>
     
@@ -560,15 +592,15 @@ Flannel官网：https://github.com/coreos/flannel
             
         
             
+            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
+            
+        
+            
             <a href="/tags/#Blockchain" title="Blockchain" rel="5">Blockchain</a>
             
         
             
             <a href="/tags/#Ethereum" title="Ethereum" rel="2">Ethereum</a>
-            
-        
-            
-            <a href="/tags/#Kubernetes" title="Kubernetes" rel="21">Kubernetes</a>
             
         
             
@@ -588,7 +620,7 @@ Flannel官网：https://github.com/coreos/flannel
             
         
             
-            <a href="/tags/#源码分析" title="源码分析" rel="5">源码分析</a>
+            <a href="/tags/#源码分析" title="源码分析" rel="6">源码分析</a>
             
         
             
@@ -682,15 +714,15 @@ Flannel官网：https://github.com/coreos/flannel
         </li>
       
         <li>
+          <a href="/article/source-analysis/kubelet/create-pod-by-kubelet/">[源码分析] kubelet源码分析（三）之 Pod的创建</a>
+        </li>
+      
+        <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
         </li>
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
-        </li>
-      
-        <li>
-          <a href="/article/ethereum/ethereum-introduction/">[Ethereum] 以太坊系列（一）之以太坊介绍</a>
         </li>
       
     </ul>
@@ -723,7 +755,7 @@ Flannel官网：https://github.com/coreos/flannel
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>

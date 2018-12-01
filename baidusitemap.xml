@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.huweihuang.com/article/source-analysis/kubelet/create-pod-by-kubelet/</loc>
+    <lastmod>2018-12-01T12:54:27.084Z</lastmod>
+    <data>
+        <display>
+        <title>[源码分析] kubelet源码分析（三）之 Pod的创建</title>
+        <pubTime>2018-10-04T08:24:24.000Z</pubTime>
+        
+        <tag>源码分析</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huweihuang.com/article/essay/sky-and-well/</loc>
     <lastmod>2018-11-15T13:19:36.042Z</lastmod>
     <data>
@@ -55,14 +72,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/install-k8s-by-kubespray/</loc>
+    <loc>http://www.huweihuang.com/article/source-analysis/kubelet/kubelet-cmd/</loc>
     <lastmod>2018-11-15T13:19:36.036Z</lastmod>
     <data>
         <display>
-        <title>[Kubernetes] 使用kubespray安装k8s集群</title>
-        <pubTime>2018-06-23T13:26:24.000Z</pubTime>
+        <title>[源码分析] kubelet源码分析（一）之 NewKubeletCommand</title>
+        <pubTime>2018-10-03T08:23:24.000Z</pubTime>
         
-        <tag>Kubernetes</tag>
+        <tag>源码分析</tag>
          
          
            
@@ -89,14 +106,67 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/source-analysis/kubelet/kubelet-cmd/</loc>
+    <loc>http://www.huweihuang.com/article/kubernetes/install-k8s-by-kubespray/</loc>
     <lastmod>2018-11-15T13:19:36.036Z</lastmod>
     <data>
         <display>
-        <title>[源码分析] kubelet源码分析（一）之 NewKubeletCommand</title>
-        <pubTime>2018-10-03T08:23:24.000Z</pubTime>
+        <title>[Kubernetes] 使用kubespray安装k8s集群</title>
+        <pubTime>2018-06-23T13:26:24.000Z</pubTime>
         
-        <tag>源码分析</tag>
+        <tag>Kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/docker/install-docker/</loc>
+    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
+    <data>
+        <display>
+        <title>[Docker] 安装Docker</title>
+        <pubTime>2018-06-23T09:26:24.000Z</pubTime>
+        
+        <tag>Docker</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/kubernetes/nodeselector-and-taint/</loc>
+    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
+    <data>
+        <display>
+        <title>[Kubernetes] kubernetes指定节点调度与隔离</title>
+        <pubTime>2018-06-23T08:22:24.000Z</pubTime>
+        
+        <tag>Kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/ethereum/ethereum-account-management/</loc>
+    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
+    <data>
+        <display>
+        <title>[Ethereum] 以太坊系列（二）之账户管理</title>
+        <pubTime>2018-08-11T10:20:24.000Z</pubTime>
+        
+        <tag>Blockchain</tag>
+         
+        <tag>Ethereum</tag>
          
          
            
@@ -142,82 +212,12 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/ethereum/ethereum-account-management/</loc>
-    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
-    <data>
-        <display>
-        <title>[Ethereum] 以太坊系列（二）之账户管理</title>
-        <pubTime>2018-08-11T10:20:24.000Z</pubTime>
-        
-        <tag>Blockchain</tag>
-         
-        <tag>Ethereum</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/docker/install-docker/</loc>
-    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
-    <data>
-        <display>
-        <title>[Docker] 安装Docker</title>
-        <pubTime>2018-06-23T09:26:24.000Z</pubTime>
-        
-        <tag>Docker</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.huweihuang.com/article/blockchain/blockchain-transactions/</loc>
     <lastmod>2018-11-15T13:19:36.035Z</lastmod>
     <data>
         <display>
         <title>[Blockchain] 区块链系列（六）之比特币交易</title>
         <pubTime>2018-06-26T07:30:24.000Z</pubTime>
-        
-        <tag>Blockchain</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/nodeselector-and-taint/</loc>
-    <lastmod>2018-11-15T13:19:36.035Z</lastmod>
-    <data>
-        <display>
-        <title>[Kubernetes] kubernetes指定节点调度与隔离</title>
-        <pubTime>2018-06-23T08:22:24.000Z</pubTime>
-        
-        <tag>Kubernetes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/blockchain/blockchain-keys&addresses/</loc>
-    <lastmod>2018-11-15T13:19:36.034Z</lastmod>
-    <data>
-        <display>
-        <title>[Blockchain] 区块链系列（四）之密钥和地址</title>
-        <pubTime>2018-06-26T07:25:24.000Z</pubTime>
         
         <tag>Blockchain</tag>
          
@@ -246,29 +246,12 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/source-analysis/nfs-client-provisioner/</loc>
-    <lastmod>2018-11-15T13:19:36.033Z</lastmod>
+    <loc>http://www.huweihuang.com/article/blockchain/blockchain-keys&addresses/</loc>
+    <lastmod>2018-11-15T13:19:36.034Z</lastmod>
     <data>
         <display>
-        <title>[源码分析] nfs-client-provisioner源码分析</title>
-        <pubTime>2018-06-24T07:24:24.000Z</pubTime>
-        
-        <tag>源码分析</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/blockchain/blockchain-introduction/</loc>
-    <lastmod>2018-11-15T13:19:36.033Z</lastmod>
-    <data>
-        <display>
-        <title>[Blockchain] 区块链系列（八）之区块链介绍</title>
-        <pubTime>2018-07-01T07:26:24.000Z</pubTime>
+        <title>[Blockchain] 区块链系列（四）之密钥和地址</title>
+        <pubTime>2018-06-26T07:25:24.000Z</pubTime>
         
         <tag>Blockchain</tag>
          
@@ -280,14 +263,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/arithmetic/data-structure-overview/</loc>
+    <loc>http://www.huweihuang.com/article/source-analysis/nfs-client-provisioner/</loc>
     <lastmod>2018-11-15T13:19:36.033Z</lastmod>
     <data>
         <display>
-        <title>[Arithmetic] 数据结构概述</title>
-        <pubTime>2018-04-17T14:26:24.000Z</pubTime>
+        <title>[源码分析] nfs-client-provisioner源码分析</title>
+        <pubTime>2018-06-24T07:24:24.000Z</pubTime>
         
-        <tag>Arithmetic</tag>
+        <tag>源码分析</tag>
          
          
            
@@ -314,14 +297,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/golang/glide-usage/</loc>
-    <lastmod>2018-11-15T13:19:36.032Z</lastmod>
+    <loc>http://www.huweihuang.com/article/arithmetic/data-structure-overview/</loc>
+    <lastmod>2018-11-15T13:19:36.033Z</lastmod>
     <data>
         <display>
-        <title>[Golang] glide的使用</title>
-        <pubTime>2018-05-01T07:26:24.000Z</pubTime>
+        <title>[Arithmetic] 数据结构概述</title>
+        <pubTime>2018-04-17T14:26:24.000Z</pubTime>
         
-        <tag>Golang</tag>
+        <tag>Arithmetic</tag>
          
          
            
@@ -331,12 +314,29 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/golang/dep-usage/</loc>
+    <loc>http://www.huweihuang.com/article/blockchain/blockchain-introduction/</loc>
+    <lastmod>2018-11-15T13:19:36.033Z</lastmod>
+    <data>
+        <display>
+        <title>[Blockchain] 区块链系列（八）之区块链介绍</title>
+        <pubTime>2018-07-01T07:26:24.000Z</pubTime>
+        
+        <tag>Blockchain</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/golang/glide-usage/</loc>
     <lastmod>2018-11-15T13:19:36.032Z</lastmod>
     <data>
         <display>
-        <title>[Golang] dep的使用</title>
-        <pubTime>2018-05-01T08:26:24.000Z</pubTime>
+        <title>[Golang] glide的使用</title>
+        <pubTime>2018-05-01T07:26:24.000Z</pubTime>
         
         <tag>Golang</tag>
          
@@ -356,6 +356,23 @@
         <pubTime>2018-05-01T09:26:24.000Z</pubTime>
         
         <tag>Linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/golang/dep-usage/</loc>
+    <lastmod>2018-11-15T13:19:36.032Z</lastmod>
+    <data>
+        <display>
+        <title>[Golang] dep的使用</title>
+        <pubTime>2018-05-01T08:26:24.000Z</pubTime>
+        
+        <tag>Golang</tag>
          
          
            
@@ -416,14 +433,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/source-analysis/client-go-source-analysis/</loc>
+    <loc>http://www.huweihuang.com/article/machine-learning/machine-learning-concept/</loc>
     <lastmod>2018-11-15T13:18:10.354Z</lastmod>
     <data>
         <display>
-        <title>[源码分析] client-go的使用及源码分析</title>
-        <pubTime>2017-12-16T13:02:24.000Z</pubTime>
+        <title>[MachineLearning] 机器学习的概念</title>
+        <pubTime>2018-01-06T08:26:24.000Z</pubTime>
         
-        <tag>源码分析</tag>
+        <tag>MachineLearning</tag>
          
          
            
@@ -450,14 +467,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/machine-learning/machine-learning-concept/</loc>
+    <loc>http://www.huweihuang.com/article/redis/redis-sentinel/</loc>
     <lastmod>2018-11-15T13:18:10.354Z</lastmod>
     <data>
         <display>
-        <title>[MachineLearning] 机器学习的概念</title>
-        <pubTime>2018-01-06T08:26:24.000Z</pubTime>
+        <title>[Redis] Redis哨兵模式部署</title>
+        <pubTime>2018-04-17T12:26:24.000Z</pubTime>
         
-        <tag>MachineLearning</tag>
+        <tag>Redis</tag>
          
          
            
@@ -467,14 +484,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/redis/redis-sentinel/</loc>
+    <loc>http://www.huweihuang.com/article/source-analysis/client-go-source-analysis/</loc>
     <lastmod>2018-11-15T13:18:10.354Z</lastmod>
     <data>
         <display>
-        <title>[Redis] Redis哨兵模式部署</title>
-        <pubTime>2018-04-17T12:26:24.000Z</pubTime>
+        <title>[源码分析] client-go的使用及源码分析</title>
+        <pubTime>2017-12-16T13:02:24.000Z</pubTime>
         
-        <tag>Redis</tag>
+        <tag>源码分析</tag>
          
          
            
@@ -590,12 +607,12 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-basic-concepts/</loc>
+    <loc>http://www.huweihuang.com/article/kubernetes/core-principle/kubernetes-core-principle-scheduler/</loc>
     <lastmod>2018-10-01T07:44:43.900Z</lastmod>
     <data>
         <display>
-        <title>[Kubernetes] Kubernetes基本概念</title>
-        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
+        <title>[Kubernetes] Kubernetes核心原理（三）之Scheduler</title>
+        <pubTime>2017-08-15T02:50:57.000Z</pubTime>
         
         <tag>Kubernetes</tag>
          
@@ -607,12 +624,12 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/core-principle/kubernetes-core-principle-scheduler/</loc>
+    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-basic-concepts/</loc>
     <lastmod>2018-10-01T07:44:43.900Z</lastmod>
     <data>
         <display>
-        <title>[Kubernetes] Kubernetes核心原理（三）之Scheduler</title>
-        <pubTime>2017-08-15T02:50:57.000Z</pubTime>
+        <title>[Kubernetes] Kubernetes基本概念</title>
+        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
         
         <tag>Kubernetes</tag>
          
@@ -658,6 +675,23 @@
 
     
   <url>
+    <loc>http://www.huweihuang.com/article/golang/web-programming/golang-http-execution-flow/</loc>
+    <lastmod>2018-10-01T07:44:43.898Z</lastmod>
+    <data>
+        <display>
+        <title>[Golang] GO HTTP执行流程</title>
+        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
+        
+        <tag>Golang</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huweihuang.com/article/golang/golang-pointer/</loc>
     <lastmod>2018-10-01T07:44:43.898Z</lastmod>
     <data>
@@ -675,11 +709,11 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/golang/web-programming/golang-http-execution-flow/</loc>
-    <lastmod>2018-10-01T07:44:43.898Z</lastmod>
+    <loc>http://www.huweihuang.com/article/golang/beego/beego-introduction/</loc>
+    <lastmod>2018-10-01T07:44:43.897Z</lastmod>
     <data>
         <display>
-        <title>[Golang] GO HTTP执行流程</title>
+        <title>[Golang] beego介绍</title>
         <pubTime>2017-09-01T02:50:57.000Z</pubTime>
         
         <tag>Golang</tag>
@@ -709,14 +743,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/golang/beego/beego-introduction/</loc>
-    <lastmod>2018-10-01T07:44:43.897Z</lastmod>
+    <loc>http://www.huweihuang.com/article/flannel/flannel-introduction/</loc>
+    <lastmod>2018-10-01T07:44:43.896Z</lastmod>
     <data>
         <display>
-        <title>[Golang] beego介绍</title>
-        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
+        <title>[Kubernetes] Flannel介绍</title>
+        <pubTime>2017-07-08T02:50:57.000Z</pubTime>
         
-        <tag>Golang</tag>
+        <tag>Kubernetes</tag>
          
          
            
@@ -743,14 +777,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/flannel/flannel-introduction/</loc>
-    <lastmod>2018-10-01T07:44:43.896Z</lastmod>
+    <loc>http://www.huweihuang.com/article/database/mysql-commonds/</loc>
+    <lastmod>2018-10-01T07:44:43.895Z</lastmod>
     <data>
         <display>
-        <title>[Kubernetes] Flannel介绍</title>
-        <pubTime>2017-07-08T02:50:57.000Z</pubTime>
+        <title>[Database] Mysql常用命令</title>
+        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
         
-        <tag>Kubernetes</tag>
+        <tag>Database</tag>
          
          
            
@@ -768,23 +802,6 @@
         <pubTime>2017-07-09T02:50:57.000Z</pubTime>
         
         <tag>Docker</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/database/mysql-commonds/</loc>
-    <lastmod>2018-10-01T07:44:43.895Z</lastmod>
-    <data>
-        <display>
-        <title>[Database] Mysql常用命令</title>
-        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
-        
-        <tag>Database</tag>
          
          
            
@@ -828,6 +845,57 @@
 
     
   <url>
+    <loc>http://www.huweihuang.com/article/kubernetes/monitoring/influxdb-introduction/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Kubernetes] Influxdb介绍</title>
+        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
+        
+        <tag>Kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/golang/golang-test/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Golang] Golang测试用例</title>
+        <pubTime>2017-09-01T03:50:57.000Z</pubTime>
+        
+        <tag>Golang</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-troubleshooting/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Kubernetes] Kubernetes集群问题排查</title>
+        <pubTime>2017-09-20T02:50:57.000Z</pubTime>
+        
+        <tag>Kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huweihuang.com/article/docker/code-analysis/code-analysis-of-docker-client/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
@@ -845,46 +913,29 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/golang/golang-text-process/</loc>
+    <loc>http://www.huweihuang.com/article/docker/code-analysis/code-analysis-of-docker-server/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
         <display>
-        <title>[Golang] Golang文本处理</title>
+        <title>[Docker] Docker源码分析（三）之Docker Server</title>
+        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        
+        <tag>Docker</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/golang/govendor-usage/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Golang] govendor的使用</title>
         <pubTime>2017-09-01T02:50:57.000Z</pubTime>
-        
-        <tag>Golang</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/redis/redis-introduction/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Redis] Redis介绍</title>
-        <pubTime>2017-07-15T02:50:57.000Z</pubTime>
-        
-        <tag>Redis</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/golang/golang-concurrent-programming/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Golang] Golang系列（三）之并发编程</title>
-        <pubTime>2017-09-14T02:50:57.000Z</pubTime>
         
         <tag>Golang</tag>
          
@@ -913,14 +964,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/docker/code-analysis/code-analysis-of-docker-server/</loc>
+    <loc>http://www.huweihuang.com/article/golang/golang-gdb-debug/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
         <display>
-        <title>[Docker] Docker源码分析（三）之Docker Server</title>
-        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        <title>[Golang] Golang之GDB调试</title>
+        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
         
-        <tag>Docker</tag>
+        <tag>Golang</tag>
          
          
            
@@ -930,14 +981,31 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/docker/docker-architecture/</loc>
+    <loc>http://www.huweihuang.com/article/golang/golang-text-process/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
         <display>
-        <title>[Docker] Docker整体架构图</title>
-        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        <title>[Golang] Golang文本处理</title>
+        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
         
-        <tag>Docker</tag>
+        <tag>Golang</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-architecture/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Kubernetes] Kubernetes总架构图</title>
+        <pubTime>2017-09-20T02:50:57.000Z</pubTime>
+        
+        <tag>Kubernetes</tag>
          
          
            
@@ -981,150 +1049,14 @@
 
     
   <url>
-    <loc>http://www.huweihuang.com/article/docker/dockerfile-usage/</loc>
+    <loc>http://www.huweihuang.com/article/golang/golang-concurrent-programming/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
         <display>
-        <title>[Docker] Dockerfile使用说明</title>
-        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
-        
-        <tag>Docker</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-architecture/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Kubernetes] Kubernetes总架构图</title>
-        <pubTime>2017-09-20T02:50:57.000Z</pubTime>
-        
-        <tag>Kubernetes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/golang/govendor-usage/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Golang] govendor的使用</title>
-        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
+        <title>[Golang] Golang系列（三）之并发编程</title>
+        <pubTime>2017-09-14T02:50:57.000Z</pubTime>
         
         <tag>Golang</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/golang/golang-test/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Golang] Golang测试用例</title>
-        <pubTime>2017-09-01T03:50:57.000Z</pubTime>
-        
-        <tag>Golang</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/golang/golang-gdb-debug/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Golang] Golang之GDB调试</title>
-        <pubTime>2017-09-01T02:50:57.000Z</pubTime>
-        
-        <tag>Golang</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/nginx/nginx-deploy&config/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Nginx] Nginx的部署与配置</title>
-        <pubTime>2017-09-13T02:50:57.000Z</pubTime>
-        
-        <tag>Nginx</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/monitoring/influxdb-introduction/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Kubernetes] Influxdb介绍</title>
-        <pubTime>2017-08-13T02:50:57.000Z</pubTime>
-        
-        <tag>Kubernetes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/docker/code-analysis/code-analysis-of-docker-daemon/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Docker] Docker源码分析（二）之Docker Daemon</title>
-        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
-        
-        <tag>Docker</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huweihuang.com/article/kubernetes/kubernetes-troubleshooting/</loc>
-    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>[Kubernetes] Kubernetes集群问题排查</title>
-        <pubTime>2017-09-20T02:50:57.000Z</pubTime>
-        
-        <tag>Kubernetes</tag>
          
          
            
@@ -1151,6 +1083,40 @@
 
     
   <url>
+    <loc>http://www.huweihuang.com/article/nginx/nginx-deploy&config/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Nginx] Nginx的部署与配置</title>
+        <pubTime>2017-09-13T02:50:57.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/docker/code-analysis/code-analysis-of-docker-daemon/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Docker] Docker源码分析（二）之Docker Daemon</title>
+        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        
+        <tag>Docker</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huweihuang.com/article/etcd/etcd-auth&security/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
@@ -1168,6 +1134,23 @@
 
     
   <url>
+    <loc>http://www.huweihuang.com/article/docker/dockerfile-usage/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Docker] Dockerfile使用说明</title>
+        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        
+        <tag>Docker</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huweihuang.com/article/kubernetes/monitoring/heapster-introduction/</loc>
     <lastmod>2018-06-24T07:11:18.000Z</lastmod>
     <data>
@@ -1176,6 +1159,40 @@
         <pubTime>2017-08-13T02:50:57.000Z</pubTime>
         
         <tag>Kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/docker/docker-architecture/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Docker] Docker整体架构图</title>
+        <pubTime>2017-07-09T02:50:57.000Z</pubTime>
+        
+        <tag>Docker</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huweihuang.com/article/redis/redis-introduction/</loc>
+    <lastmod>2018-06-24T07:11:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>[Redis] Redis介绍</title>
+        <pubTime>2017-07-15T02:50:57.000Z</pubTime>
+        
+        <tag>Redis</tag>
          
          
            
