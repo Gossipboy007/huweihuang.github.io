@@ -8,7 +8,7 @@
 
     <url>
         <loc>http://www.huweihuang.com/article/essay/random-thinking/</loc>
-        <lastmod>2018-12-23T14:57:40.417Z</lastmod>
+        <lastmod>2018-12-23T15:37:43.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -407,7 +407,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/etcd/etcd-commands/</loc>
+        <loc>http://www.huweihuang.com/article/etcd/etcd-auth&security/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -415,7 +415,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/etcd/etcd-auth&security/</loc>
+        <loc>http://www.huweihuang.com/article/etcd/etcd-commands/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
