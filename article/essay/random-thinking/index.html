@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Redis] Redis介绍 - 胡伟煌 | Blog
+          [随笔] 胡思乱想 - 胡伟煌 | Blog
         
     </title>
 
-    <link rel="canonical" href="http://www.huweihuang.com/article/redis/redis-introduction/">
+    <link rel="canonical" href="http://www.huweihuang.com/article/essay/random-thinking/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('https://res.cloudinary.com/dqxtn0ick/image/upload/v1542285471/header/article.jpg')
+            background-image: url('https://res.cloudinary.com/dqxtn0ick/image/upload/v1542285471/header/building.jpg')
             /*post*/
         
     }
@@ -86,14 +86,14 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Redis" title="Redis">Redis</a>
+                              <a class="tag" href="/tags/#随笔" title="随笔">随笔</a>
                             
                         </div>
-                        <h1>[Redis] Redis介绍</h1>
+                        <h1>[随笔] 胡思乱想</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by 胡伟煌 on
-                            2017-07-15
+                            2018-12-23
                         </span>
                     </div>
                 
@@ -210,83 +210,25 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="一-redis是什么what">一、redis是什么？（what）</h2>
-<p>Redis是一个开源（BSD许可），内存存储的数据结构服务器，可用作数据库，高速缓存和消息队列代理。它支持字符串、哈希表、列表、集合、有序集合，位图，hyperloglogs等数据类型。内置复制、Lua脚本、LRU收回、事务以及不同级别磁盘持久化功能，同时通过Redis Sentinel提供高可用，通过Redis Cluster提供自动分区。</p>
-<p>Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。</p>
-<h2 id="二-为什么使用rediswhy">二、为什么使用redis？（why）</h2>
-<h3 id="一redis的特点">（一）redis的特点</h3>
-<ol>
-<li>Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。</li>
-<li>Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，zset，hash等数据结构的存储。</li>
-<li>Redis支持数据的备份，即master-slave模式的数据备份。</li>
-</ol>
-<h3 id="二redis的优势">（二）redis的优势</h3>
-<ol>
-<li>性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s 。</li>
-<li>丰富的数据类型 – Redis支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。</li>
-<li>原子 – Redis的所有操作都是原子性的，同时Redis还支持对几个操作全并后的原子性执行。</li>
-<li>丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性。</li>
-</ol>
-<h3 id="三redis与其他key-value存储有什么不同">（三）redis与其他key-value存储有什么不同</h3>
-<ol>
-<li>Redis有着更为复杂的数据结构并且提供对他们的原子性操作，Redis的数据类型都是基于基本数据结构的同时对程序员透明，无需进行额外的抽象。</li>
-<li>Redis运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存，应为数据量不能大于硬件内存。</li>
-<li>相比在磁盘上相同的复杂的数据结构，在内存中操作起来非常简单，这样Redis可以做很多内部复杂性很强的事情。</li>
-<li>在磁盘格式方面他们是紧凑的以追加的方式产生的，因为他们并不需要进行随机访问。</li>
-</ol>
-<h2 id="三-如何使用redishow">三、如何使用redis？（how）</h2>
-<h3 id="一redis的数据类型">（一）redis的数据类型</h3>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>概念</th>
-<th>常用命令</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>String(字符串)</td>
-<td>key-value型</td>
-<td>SET ，GET</td>
-</tr>
-<tr>
-<td>Hash(哈希)</td>
-<td>field-value,适用于存储对象类型（对象名-对象属性值）</td>
-<td>HMSET，HEGTALL</td>
-</tr>
-<tr>
-<td>List(列表)</td>
-<td>string类型的有序列表，按照插入顺序排序</td>
-<td>lpush，lrange</td>
-</tr>
-<tr>
-<td>Set(集合)</td>
-<td>string类型的无序集合</td>
-<td>sadd，smembers</td>
-</tr>
-<tr>
-<td>zset(sorted set：有序集合)</td>
-<td>string类型元素的集合,且不允许重复的成员。每个元素关联一个double值来进行排序，double值可以重复但元素不能重复。</td>
-<td>zadd，ZRANGEBYSCORE</td>
-</tr>
-</tbody>
-</table>
-<h3 id="二redis常用命令">（二）redis常用命令</h3>
-<div><h2 id="推荐文章">推荐文章<span style="font-size:0.45em; color:gray"></span></h2><ul><li><a href="http://www.huweihuang.com/article/redis/redis-sentinel/">[Redis] Redis哨兵模式部署</a></li><li><a href="http://www.huweihuang.com/article/redis/redis-cluster/">[Redis] Redis集群模式部署</a></li></ul></div>
+                <h1 id="胡思乱想">胡思乱想</h1>
+<p>​　　最近又开始乱想了，走在路上脑海都有莫名的思绪在飘，而当你静下来的时候又一溜烟跑没了，都不知道去哪里找。2018年还有几天就要结束了，好像来得太快了些。</p>
+<p>​　　回想自己刚毕业的时候，总觉得还年轻，有试错的资本，比大多数人幸运的是比较早的找到了方向，不用挣扎在换方向和不得不做自己不喜欢的事情。毕竟挺多人陷入这样的一个循环：做着自己不喜欢的事情，而又不能从中得到提升，得不到提升就无法胜任更好的工作，不能胜任更好的工作，就不得不做原来的事情，如此循环。而时间久了，你原来的工作是你下一个阶段的筹码，当你要换别的方向，原来积累的筹码便会贬值，或者说你没有你要换的方向的筹码，在当前利益最大化的情况下，你不得不继续做原来的方向，进入二次循环。这就好比大学选了一个不喜欢的专业，你必须把自己不喜欢的专业的成绩提高才可以申请转专业，当然跳出这种循环，这是一种行之有效的方法，另一种方法是从头开始，这就要权衡成本和收益。但并不是说你当前认为的无价值的东西它真的无价值，或许某一天它反而可以助你一臂之力。</p>
+<p>​　　我们总是想的太多，做的太少了。我总感觉自己看得还不够远，努力地去踮起脚尖，睁大眼睛，希望可以看得更远，再远一些，但是脚掌就那么大，眼睛能看到的也就那么远，最多也就跳一跳，偶尔可以瞥上一两眼，这毕竟不是长久之计，终究还是自己所站的台阶不够高。而这个台阶也不完全是你自己爬上去的，你的祖辈，你的父辈，还有你自己共同铸就了你当前所站的位置，只不过有的人是父辈帮忙爬的多一些，有的人是自己爬的多一些。爬台阶也是很累的，腿短的一次只能上一个台阶，一个台阶可能都需要迈很久，腿长的一次可能跨两三个台阶也不在话下，而有的或许靠父母或自己买了缆车的票，直接上去了，不需要自己爬。众生百态，不能因为轻松而沾沾自喜，也不能因为太累而干脆放弃，毕竟天道好轮回，苍天饶过谁。</p>
+<p>​　　回想自己的2018年，没有太多的意外，也没有太多的惊喜。我能掌握主动权的事情，基本控制在我预期的范围内，我拿不到主动权的事情，也没有取得太大的进展。我有预感未来的某一天，我会为自己这一两年没做的，不敢做的事情感到遗憾和后悔，但是我真想告诉未来的自己，现在的我已经尽力将手上的牌打好，手上的好牌不算多，难免会过于小心和犹豫，这自然是需要改进的地方。另外一点是，有些事不能看得太明白，或许是我自认为看得太明白了，就好比我站在此处，看到路的远方写着此路不通的牌子，我便不再想往前走了，心想既然此路不通，我何必浪费我的时间和精力再走过去呢，我何不换一条路，毕竟走过去再走回来除了时间精力成本外，也是会累的，走多了太累了，以后就更走不动，更不想走了。如果我没看清那个牌子，兴许我会怀着希望与好奇心走过去，走到最后发现写着此路不通，但也有可能此路不通旁边会放着另外一条路的指示牌，你可以继续走下去，刚才走过的路并没有白费力气。看得太明白了就丧失了很多可能性了！而我终有一天会为这种可能性后悔的。</p>
+<p>​　　最近一段时间，越来越意识到20岁到30岁这十年的积累可能对一个人的下半辈子甚至下一代产生的影响。10年的前一半时间大多在学生阶段，大学或者研究生，后一半的时间则在步入工作的5年期内。而这10年的效应是在前一年的基础上累增的。总是说三十而立，三十岁好像是一个分界岭，需要更换角色，进入下一个阶段的打怪中，如果把三十岁作为一个路标，又觉得没有缓冲期，那28岁呢，当28岁的时候，我应该是一个什么样的人。这样想来，所剩的时间不算多也不算少，不过时间真的很快，想想却会有点焦虑了。像极了考试倒计时，总觉得什么都没复习，这个也会考，那个也会考，如果我早点把基础打好一点，或许就会比较淡定了，但是对于过去对于未来，你都无能为力，所能够把握和支配的只有现在，这种焦虑感来源于什么都要复习，却又复习不下去，浪费了一点时间就会陷入自责与愧疚中。</p>
+<p>​　　2018年真的要过去了，外部环境来讲，这一年并不是很好的一年，都说10年一周期，1998年、2008年经济都不是太好。而2018年对我来讲，有些事情没达到预期，而我又暂时想不到好的办法。努力就是一个不断获取主动权的过程，但有的努力也不一定可以拿到主动权。过于理性，不好；想太多，不好；不敢轻易尝试，不好。</p>
+<p>​　　今天晚上下雨了，天还真的有点冷。</p>
+<p>​　　​　　　　　　　　　　　　　​　　​　　　　　　　　　　———于2018年12月23日晚，雨</p>
+<div><h2 id="推荐文章">推荐文章<span style="font-size:0.45em; color:gray"></span></h2><ul><li><a href="http://www.huweihuang.com/article/essay/something-has-to-be-written/">[随笔] 总得写点什么</a></li><li><a href="http://www.huweihuang.com/article/essay/sky-and-well/">[随笔] 坐井观天</a></li></ul></div>
                 
 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/article/kubernetes/kubernetes-network/" data-toggle="tooltip" data-placement="top" title="[Kubernetes] Kubernetes网络原理">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/article/etcd/etcd-introduction/" data-toggle="tooltip" data-placement="top" title="[Etcd] Etcd介绍">Next Post &rarr;</a>
+                            <a href="/article/essay/something-has-to-be-written/" data-toggle="tooltip" data-placement="top" title="[随笔] 总得写点什么">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -295,18 +237,18 @@
                 
                 <!-- require APlayer -->
                 
+                
+                
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
                     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
-    
+                
                     <div class="aplayer"
-                        data-id="2423410161"
+                        data-id="536096151"
                         data-server="netease"
-                        data-type="playlist"
-                        data-fixed="true" >
+                        data-type="song"
+                        data-fixed="false" >
                     </div>
-                
-                
                 
 
                 <br>
@@ -348,7 +290,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一-redis是什么what"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、redis是什么？（what）</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#二-为什么使用rediswhy"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、为什么使用redis？（why）</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一redis的特点"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">（一）redis的特点</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二redis的优势"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">（二）redis的优势</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三redis与其他key-value存储有什么不同"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">（三）redis与其他key-value存储有什么不同</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#三-如何使用redishow"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、如何使用redis？（how）</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一redis的数据类型"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">（一）redis的数据类型</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二redis常用命令"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">（二）redis常用命令</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#推荐文章"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">推荐文章</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#胡思乱想"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">胡思乱想</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#推荐文章"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">推荐文章</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -368,7 +310,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Redis" title="Redis">Redis</a>
+                          <a class="tag" href="/tags/#随笔" title="随笔">随笔</a>
                         
                     </div>
                 </section>

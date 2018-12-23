@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://www.huweihuang.com/article/essay/random-thinking/</loc>
+        <lastmod>2018-12-23T14:57:40.417Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.huweihuang.com/article/source-analysis/kubelet/create-pod-by-kubelet/</loc>
         <lastmod>2018-12-01T12:54:27.084Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -399,7 +407,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/etcd/etcd-auth&security/</loc>
+        <loc>http://www.huweihuang.com/article/etcd/etcd-commands/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -407,7 +415,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/etcd/etcd-commands/</loc>
+        <loc>http://www.huweihuang.com/article/etcd/etcd-auth&security/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -503,7 +511,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/golang/golang-object-oriented-programming/</loc>
+        <loc>http://www.huweihuang.com/article/golang/golang-packages/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -511,7 +519,7 @@
     </url>
 
     <url>
-        <loc>http://www.huweihuang.com/article/golang/golang-packages/</loc>
+        <loc>http://www.huweihuang.com/article/golang/golang-object-oriented-programming/</loc>
         <lastmod>2018-06-24T07:11:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

@@ -209,6 +209,42 @@
 
 <div class="post-preview">
 
+    <a href="/article/python/basics/python-advanced-features/">
+        <h2 class="post-title">
+            [Python] Python系列（三）之高级特性
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. 切片
+切片操作（slice），即从list（tuple是一种特殊的list）中获取部分元素。
+
+L[m,n]表示从L[m]~L[n-1]的list。
+L[:n]表示从L[0]~L[n-1]的list。
+L[m:]表示从L[m]~L[len(L)-1]。
+L[-m:]表示倒数m个数的list。
+L[m:n:k]表示从L[m:n]list中每k个取一个数组成一个新的list。
+L[::k]......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-09-11
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Python" title="Python">Python</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/python/basics/python-function/">
         <h2 class="post-title">
             [Python] Python系列（二）之Python函数
@@ -356,6 +392,39 @@ golang工程的依赖包经常使用go get 的方式来获取，例如：go get 
 
 <div class="post-preview">
 
+    <a href="/article/golang/golang-text-process/">
+        <h2 class="post-title">
+            [Golang] Golang文本处理
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. JSON处理
+JSON是一种轻量级的数据交换语言。
+1.1. 解析JSON[Unmarshal(data []byte, v interface{})]
+1.1.1. Unmarshal源码
+/src/encoding/json/decode.go
+1234567891011121314151617181920212223242526272829303132func Unmarshal......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-09-01
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Golang" title="Golang">Golang</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/golang/golang-gdb-debug/">
         <h2 class="post-title">
             [Golang] Golang之GDB调试
@@ -409,39 +478,6 @@ GDB是FSF(自由软件基金会)发布的一个强大的类UNIX系统下的程�
 1go get -u github.com/astaxie/beego
 2、源码下载升级
 用户访问 https://github.com/astaxie/beego ,下载源码，然后覆盖到 $GOPATH/src/github.com......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-09-01
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Golang" title="Golang">Golang</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/golang/golang-text-process/">
-        <h2 class="post-title">
-            [Golang] Golang文本处理
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. JSON处理
-JSON是一种轻量级的数据交换语言。
-1.1. 解析JSON[Unmarshal(data []byte, v interface{})]
-1.1.1. Unmarshal源码
-/src/encoding/json/decode.go
-1234567891011121314151617181920212223242526272829303132func Unmarshal......
         </div>
     </a>
     
@@ -517,35 +553,6 @@ JSON是一种轻量级的数据交换语言。
 </div>
 <hr>
 
-<div class="post-preview">
-
-    <a href="/article/kubernetes/core-principle/kubernetes-core-principle-controller-manager/">
-        <h2 class="post-title">
-            [Kubernetes] Kubernetes核心原理（二）之Controller Manager
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            1. Controller Manager简介
-Controller Manager作为集群内部的管理控制中心，负责集群内的Node、Pod副本、服务端点（Endpoint）、命名空间（Namespace）、服务账号（ServiceAccount）、资源定额（ResourceQuota）的管理，当某个Node意外宕机时，Controller Manager会及时发现并执行自动化修复流程，确保......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-08-15
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
 
 
 <!-- Pager -->
@@ -599,7 +606,7 @@ Controller Manager作为集群内部的管理控制中心，负责集群内的No
             
         
             
-            <a href="/tags/#随笔" title="随笔" rel="2">随笔</a>
+            <a href="/tags/#随笔" title="随笔" rel="3">随笔</a>
             
         
             
@@ -629,9 +636,9 @@ Controller Manager作为集群内部的管理控制中心，负责集群内的No
             
         
             
-            <a href="/tags/#Linux" title="Linux" rel="2">Linux</a>
-            
         
+            
+            <a href="/tags/#Linux" title="Linux" rel="2">Linux</a>
             
         
             
@@ -721,6 +728,10 @@ Controller Manager作为集群内部的管理控制中心，负责集群内的No
     <ul>
       
         <li>
+          <a href="/article/essay/random-thinking/">[随笔] 胡思乱想</a>
+        </li>
+      
+        <li>
           <a href="/article/essay/something-has-to-be-written/">[随笔] 总得写点什么</a>
         </li>
       
@@ -734,10 +745,6 @@ Controller Manager作为集群内部的管理控制中心，负责集群内的No
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
-        </li>
-      
-        <li>
-          <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
         </li>
       
     </ul>
@@ -770,7 +777,7 @@ Controller Manager作为集群内部的管理控制中心，负责集群内的No
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>

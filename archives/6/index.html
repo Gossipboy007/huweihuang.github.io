@@ -209,6 +209,35 @@
 
 <div class="post-preview">
 
+    <a href="/article/kubernetes/core-principle/kubernetes-core-principle-controller-manager/">
+        <h2 class="post-title">
+            [Kubernetes] Kubernetes核心原理（二）之Controller Manager
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            1. Controller Manager简介
+Controller Manager作为集群内部的管理控制中心，负责集群内的Node、Pod副本、服务端点（Endpoint）、命名空间（Namespace）、服务账号（ServiceAccount）、资源定额（ResourceQuota）的管理，当某个Node意外宕机时，Controller Manager会及时发现并执行自动化修复流程，确保......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by 胡伟煌 on
+            2017-08-15
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/kubernetes/core-principle/kubernetes-core-principle-scheduler/">
         <h2 class="post-title">
             [Kubernetes] Kubernetes核心原理（三）之Scheduler
@@ -405,20 +434,24 @@ etcd Server:kubernet......
 
 <div class="post-preview">
 
-    <a href="/article/kubernetes/kubernetes-network/">
+    <a href="/article/database/mysql-commonds/">
         <h2 class="post-title">
-            [Kubernetes] Kubernetes网络原理
+            [Database] Mysql常用命令
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            1. kubernetes网络模型
-1.1. 基础原则
-
-每个Pod都拥有一个独立的IP地址，而且假定所有Pod都在一个可以直接连通的、扁平的网络空间中，不管是否运行在同一Node上都可以通过Pod的IP来访问。
-k8s中Pod的IP是最小粒度IP。同一个Pod内所有的容器共享一个网络堆栈，该模型称为IP-per-Pod模型。
-Pod由docker0实际分配的IP，Pod内部看到的IP地址和......
+            1. 系统管理
+1.1. 连接mysql
+格式： mysql -h主机地址 -u用户名 －p用户密码
+连接本地：mysql -hlocalhost/127.0.0.1 -u用户名 －p用户密码
+连接远程：mysql -h主机地址 -u用户名 －p用户密码
+退出连接：exit
+1.2. 备份数据库
+1.导出整个数据库
+导出文件默认是存在mysql\bin目录下
+mysqldump -u 用户名......
         </div>
     </a>
     
@@ -428,7 +461,7 @@ Pod由docker0实际分配的IP，Pod内部看到的IP地址和......
         </p>
         <div class="tags">
             
-              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
+              <a href="/tags/#Database" title="Database">Database</a>
             
         </div>
     
@@ -468,24 +501,20 @@ cAdvisor对Node机器上的资源及容器进行实时监控和性能数据采�
 
 <div class="post-preview">
 
-    <a href="/article/database/mysql-commonds/">
+    <a href="/article/kubernetes/kubernetes-network/">
         <h2 class="post-title">
-            [Database] Mysql常用命令
+            [Kubernetes] Kubernetes网络原理
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            1. 系统管理
-1.1. 连接mysql
-格式： mysql -h主机地址 -u用户名 －p用户密码
-连接本地：mysql -hlocalhost/127.0.0.1 -u用户名 －p用户密码
-连接远程：mysql -h主机地址 -u用户名 －p用户密码
-退出连接：exit
-1.2. 备份数据库
-1.导出整个数据库
-导出文件默认是存在mysql\bin目录下
-mysqldump -u 用户名......
+            1. kubernetes网络模型
+1.1. 基础原则
+
+每个Pod都拥有一个独立的IP地址，而且假定所有Pod都在一个可以直接连通的、扁平的网络空间中，不管是否运行在同一Node上都可以通过Pod的IP来访问。
+k8s中Pod的IP是最小粒度IP。同一个Pod内所有的容器共享一个网络堆栈，该模型称为IP-per-Pod模型。
+Pod由docker0实际分配的IP，Pod内部看到的IP地址和......
         </div>
     </a>
     
@@ -495,37 +524,7 @@ mysqldump -u 用户名......
         </p>
         <div class="tags">
             
-              <a href="/tags/#Database" title="Database">Database</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/redis/redis-introduction/">
-        <h2 class="post-title">
-            [Redis] Redis介绍
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            一、redis是什么？（what）
-Redis是一个开源（BSD许可），内存存储的数据结构服务器，可用作数据库，高速缓存和消息队列代理。它支持字符串、哈希表、列表、集合、有序集合，位图，hyperloglogs等数据类型。内置复制、Lua脚本、LRU收回、事务以及不同级别磁盘持久化功能，同时通过Redis Sentinel提供高可用，通过Redis Cluster提供自动分区。
-Redis是......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 胡伟煌 on
-            2017-07-15
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Redis" title="Redis">Redis</a>
+              <a href="/tags/#Kubernetes" title="Kubernetes">Kubernetes</a>
             
         </div>
     
@@ -586,7 +585,7 @@ Redis是......
             
         
             
-            <a href="/tags/#随笔" title="随笔" rel="2">随笔</a>
+            <a href="/tags/#随笔" title="随笔" rel="3">随笔</a>
             
         
             
@@ -616,9 +615,9 @@ Redis是......
             
         
             
-            <a href="/tags/#Linux" title="Linux" rel="2">Linux</a>
-            
         
+            
+            <a href="/tags/#Linux" title="Linux" rel="2">Linux</a>
             
         
             
@@ -708,6 +707,10 @@ Redis是......
     <ul>
       
         <li>
+          <a href="/article/essay/random-thinking/">[随笔] 胡思乱想</a>
+        </li>
+      
+        <li>
           <a href="/article/essay/something-has-to-be-written/">[随笔] 总得写点什么</a>
         </li>
       
@@ -721,10 +724,6 @@ Redis是......
       
         <li>
           <a href="/article/source-analysis/kubelet/kubelet-run/">[源码分析] kubelet源码分析（二）之 kubelet的运行</a>
-        </li>
-      
-        <li>
-          <a href="/article/source-analysis/kubelet/kubelet-cmd/">[源码分析] kubelet源码分析（一）之 NewKubeletCommand</a>
         </li>
       
     </ul>
@@ -757,7 +756,7 @@ Redis是......
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
         <hr>
